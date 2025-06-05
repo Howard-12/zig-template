@@ -27,5 +27,10 @@
           '';
         };
       }
-    );
+    ) // {
+      templates.default = {
+        path = ./.;
+        description = "Zig dev flake template";
+      };
+    };
 }
